@@ -1,4 +1,4 @@
-# <Insert Repository Name Here> Notices
+# Ed-Fi-LearningStandards-Client Notices
 
 This product includes software developed at the [Ed-Fi
 Alliance](https://www.ed-fi.org).

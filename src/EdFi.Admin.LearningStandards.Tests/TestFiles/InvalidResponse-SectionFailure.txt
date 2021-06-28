@@ -1,0 +1,3 @@
+﻿[
+  "One or more errors occurred. (http://localhost:64200/standards?fields[standards]=disciplines%2cdocument%2ceducation_levels%2cguid%2cnumber%2csection%2cseq%2cstatement%2cstatus%2curi&filter[standards]=(section.guid+eq+%27ERROR_GUID%27)&limit=10&sort[standards]=seq&partner.id=partner.id&auth.signature=auth.signature&auth.expires=999999999 responded with BadRequest: )"
+]

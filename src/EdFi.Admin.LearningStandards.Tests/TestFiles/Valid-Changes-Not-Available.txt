@@ -1,0 +1,4 @@
+﻿{
+	"EventChangesAvailable": false,
+	"MaxSequenceId": 1200
+}

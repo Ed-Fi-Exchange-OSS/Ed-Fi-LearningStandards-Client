@@ -1,0 +1,168 @@
+﻿[
+  {
+    "schema": "ed-fi",
+    "resource": "academicSubjectDescriptors",
+    "operation": "Upsert",
+    "data": [
+      {
+        "codeValue": "F1FAC302-3B53-11E0-B042-495E9DFF4B22",
+        "description": "Language Arts",
+        "namespace": "uri://academicbenchmarks.com/AcademicSubjectDescriptor",
+        "shortDescription": "LANG"
+      },
+      {
+        "codeValue": "F1FB2F2C-3B53-11E0-B042-495E9DFF4B22",
+        "description": "Mathematics",
+        "namespace": "uri://academicbenchmarks.com/AcademicSubjectDescriptor",
+        "shortDescription": "MATH"
+      },
+      {
+        "codeValue": "F1FB4B38-3B53-11E0-B042-495E9DFF4B22",
+        "description": "Social Studies",
+        "namespace": "uri://academicbenchmarks.com/AcademicSubjectDescriptor",
+        "shortDescription": "SOC"
+      },
+      {
+        "codeValue": "F1FB3DD2-3B53-11E0-B042-495E9DFF4B22",
+        "description": "Science",
+        "namespace": "uri://academicbenchmarks.com/AcademicSubjectDescriptor",
+        "shortDescription": "SCI"
+      },
+      {
+        "codeValue": "F1FB8062-3B53-11E0-B042-495E9DFF4B22",
+        "description": "The Arts",
+        "namespace": "uri://academicbenchmarks.com/AcademicSubjectDescriptor",
+        "shortDescription": "ARTS"
+      },
+      {
+        "codeValue": "F1FB589E-3B53-11E0-B042-495E9DFF4B22",
+        "description": "Health Education",
+        "namespace": "uri://academicbenchmarks.com/AcademicSubjectDescriptor",
+        "shortDescription": "HEAL"
+      },
+      {
+        "codeValue": "F1FB7338-3B53-11E0-B042-495E9DFF4B22",
+        "description": "Foreign Language",
+        "namespace": "uri://academicbenchmarks.com/AcademicSubjectDescriptor",
+        "shortDescription": "FORN"
+      },
+      {
+        "codeValue": "F1FB8DD2-3B53-11E0-B042-495E9DFF4B22",
+        "description": "Technology",
+        "namespace": "uri://academicbenchmarks.com/AcademicSubjectDescriptor",
+        "shortDescription": "TECH"
+      }
+    ]
+  },
+  {
+    "schema": "ed-fi",
+    "resource": "gradeLevelDescriptors",
+    "operation": "Upsert",
+    "data": [
+      {
+        "codeValue": "F1FA7154-3B53-11E0-B042-495E9DFF4B22",
+        "description": "9th Grade",
+        "namespace": "uri://academicbenchmarks.com/GradeLevelDescriptor",
+        "shortDescription": "9"
+      },
+      {
+        "codeValue": "F1FA7E92-3B53-11E0-B042-495E9DFF4B22",
+        "description": "10th Grade",
+        "namespace": "uri://academicbenchmarks.com/GradeLevelDescriptor",
+        "shortDescription": "10"
+      },
+      {
+        "codeValue": "F1FA8BD0-3B53-11E0-B042-495E9DFF4B22",
+        "description": "11th Grade",
+        "namespace": "uri://academicbenchmarks.com/GradeLevelDescriptor",
+        "shortDescription": "11"
+      },
+      {
+        "codeValue": "F1FA9904-3B53-11E0-B042-495E9DFF4B22",
+        "description": "12th Grade",
+        "namespace": "uri://academicbenchmarks.com/GradeLevelDescriptor",
+        "shortDescription": "12"
+      },
+      {
+        "codeValue": "F1FA49AE-3B53-11E0-B042-495E9DFF4B22",
+        "description": "6th Grade",
+        "namespace": "uri://academicbenchmarks.com/GradeLevelDescriptor",
+        "shortDescription": "6"
+      },
+      {
+        "codeValue": "F1FA56F6-3B53-11E0-B042-495E9DFF4B22",
+        "description": "7th Grade",
+        "namespace": "uri://academicbenchmarks.com/GradeLevelDescriptor",
+        "shortDescription": "7"
+      },
+      {
+        "codeValue": "F1FA642A-3B53-11E0-B042-495E9DFF4B22",
+        "description": "8th Grade",
+        "namespace": "uri://academicbenchmarks.com/GradeLevelDescriptor",
+        "shortDescription": "8"
+      },
+      {
+        "codeValue": "F1FA221C-3B53-11E0-B042-495E9DFF4B22",
+        "description": "3rd Grade",
+        "namespace": "uri://academicbenchmarks.com/GradeLevelDescriptor",
+        "shortDescription": "3"
+      },
+      {
+        "codeValue": "F1FA3C84-3B53-11E0-B042-495E9DFF4B22",
+        "description": "5th Grade",
+        "namespace": "uri://academicbenchmarks.com/GradeLevelDescriptor",
+        "shortDescription": "5"
+      },
+      {
+        "codeValue": "F1FA2F50-3B53-11E0-B042-495E9DFF4B22",
+        "description": "4th Grade",
+        "namespace": "uri://academicbenchmarks.com/GradeLevelDescriptor",
+        "shortDescription": "4"
+      },
+      {
+        "codeValue": "F1FA078C-3B53-11E0-B042-495E9DFF4B22",
+        "description": "1st Grade",
+        "namespace": "uri://academicbenchmarks.com/GradeLevelDescriptor",
+        "shortDescription": "1"
+      },
+      {
+        "codeValue": "F1FA14D4-3B53-11E0-B042-495E9DFF4B22",
+        "description": "2nd Grade",
+        "namespace": "uri://academicbenchmarks.com/GradeLevelDescriptor",
+        "shortDescription": "2"
+      },
+      {
+        "codeValue": "F1F9FA12-3B53-11E0-B042-495E9DFF4B22",
+        "description": "Kindergarten",
+        "namespace": "uri://academicbenchmarks.com/GradeLevelDescriptor",
+        "shortDescription": "K"
+      }
+    ]
+  },
+  {
+    "schema": "ed-fi",
+    "resource": "publicationStatusDescriptors",
+    "operation": "Upsert",
+    "data": [
+      {
+        "codeValue": "Active",
+        "description": "Active",
+        "namespace": "uri://academicbenchmarks.com/PublicationStatusDescriptor",
+        "shortDescription": "Active"
+      },
+      {
+        "codeValue": "Obsolete",
+        "description": "Obsolete",
+        "namespace": "uri://academicbenchmarks.com/PublicationStatusDescriptor",
+        "shortDescription": "Obsolete"
+      },
+      {
+        "codeValue": "Draft",
+        "description": "Draft",
+        "namespace": "uri://academicbenchmarks.com/PublicationStatusDescriptor",
+        "shortDescription": "Draft"
+      },
+      "One or more errors occurred."
+    ]
+  }
+]

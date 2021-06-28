@@ -1,0 +1,380 @@
+﻿[
+  {
+    "schema": "ed-fi",
+    "resource": "learningStandards",
+    "operation": "Upsert",
+    "data": [
+      {
+        "id": null,
+        "parentLearningStandardReference": null,
+        "academicSubjectDescriptor": null,
+        "courseTitle": "Section SUCCESS_GUID",
+        "description": "Standard SUCCESS_GUID-0",
+        "learningStandardId": "SUCCESS_GUID-0",
+        "itemCode": "0",
+        "namespace": "http://academicbenchmarks.com/LearningStandards.xml",
+        "successCriteria": null,
+        "uri": "https://api.academicbenchmarks.com/rest/v4/standards/SUCCESS_GUID-0",
+        "contentStandard": {
+          "mandatingEducationOrganizationReference": null,
+          "publicationStatusType": "Adopted",
+          "title": "Document SUCCESS_GUID-document",
+          "version": null,
+          "uri": null,
+          "publicationDate": null,
+          "publicationYear": 2017,
+          "beginDate": null,
+          "endDate": null,
+          "authors": [
+            {
+              "author": "Authority SUCCESS_GUID-document"
+            }
+          ]
+        },
+        "gradeLevels": [],
+        "identificationCodes": [
+          {
+            "identificationCode": "SUCCESS_GUID:00000000",
+            "contentStandardName": "AB Sequence"
+          }
+        ],
+        "prerequisiteLearningStandards": null,
+        "_etag": null
+      },
+      {
+        "id": null,
+        "parentLearningStandardReference": null,
+        "academicSubjectDescriptor": null,
+        "courseTitle": "Section SUCCESS_GUID",
+        "description": "Standard SUCCESS_GUID-1",
+        "learningStandardId": "SUCCESS_GUID-1",
+        "itemCode": "1",
+        "namespace": "http://academicbenchmarks.com/LearningStandards.xml",
+        "successCriteria": null,
+        "uri": "https://api.academicbenchmarks.com/rest/v4/standards/SUCCESS_GUID-1",
+        "contentStandard": {
+          "mandatingEducationOrganizationReference": null,
+          "publicationStatusType": "Adopted",
+          "title": "Document SUCCESS_GUID-document",
+          "version": null,
+          "uri": null,
+          "publicationDate": null,
+          "publicationYear": 2017,
+          "beginDate": null,
+          "endDate": null,
+          "authors": [
+            {
+              "author": "Authority SUCCESS_GUID-document"
+            }
+          ]
+        },
+        "gradeLevels": [],
+        "identificationCodes": [
+          {
+            "identificationCode": "SUCCESS_GUID:00000001",
+            "contentStandardName": "AB Sequence"
+          }
+        ],
+        "prerequisiteLearningStandards": null,
+        "_etag": null
+      },
+      {
+        "id": null,
+        "parentLearningStandardReference": null,
+        "academicSubjectDescriptor": null,
+        "courseTitle": "Section SUCCESS_GUID",
+        "description": "Standard SUCCESS_GUID-2",
+        "learningStandardId": "SUCCESS_GUID-2",
+        "itemCode": "2",
+        "namespace": "http://academicbenchmarks.com/LearningStandards.xml",
+        "successCriteria": null,
+        "uri": "https://api.academicbenchmarks.com/rest/v4/standards/SUCCESS_GUID-2",
+        "contentStandard": {
+          "mandatingEducationOrganizationReference": null,
+          "publicationStatusType": "Adopted",
+          "title": "Document SUCCESS_GUID-document",
+          "version": null,
+          "uri": null,
+          "publicationDate": null,
+          "publicationYear": 2017,
+          "beginDate": null,
+          "endDate": null,
+          "authors": [
+            {
+              "author": "Authority SUCCESS_GUID-document"
+            }
+          ]
+        },
+        "gradeLevels": [],
+        "identificationCodes": [
+          {
+            "identificationCode": "SUCCESS_GUID:00000002",
+            "contentStandardName": "AB Sequence"
+          }
+        ],
+        "prerequisiteLearningStandards": null,
+        "_etag": null
+      },
+      {
+        "id": null,
+        "parentLearningStandardReference": null,
+        "academicSubjectDescriptor": null,
+        "courseTitle": "Section SUCCESS_GUID",
+        "description": "Standard SUCCESS_GUID-3",
+        "learningStandardId": "SUCCESS_GUID-3",
+        "itemCode": "3",
+        "namespace": "http://academicbenchmarks.com/LearningStandards.xml",
+        "successCriteria": null,
+        "uri": "https://api.academicbenchmarks.com/rest/v4/standards/SUCCESS_GUID-3",
+        "contentStandard": {
+          "mandatingEducationOrganizationReference": null,
+          "publicationStatusType": "Adopted",
+          "title": "Document SUCCESS_GUID-document",
+          "version": null,
+          "uri": null,
+          "publicationDate": null,
+          "publicationYear": 2017,
+          "beginDate": null,
+          "endDate": null,
+          "authors": [
+            {
+              "author": "Authority SUCCESS_GUID-document"
+            }
+          ]
+        },
+        "gradeLevels": [],
+        "identificationCodes": [
+          {
+            "identificationCode": "SUCCESS_GUID:00000003",
+            "contentStandardName": "AB Sequence"
+          }
+        ],
+        "prerequisiteLearningStandards": null,
+        "_etag": null
+      },
+      {
+        "id": null,
+        "parentLearningStandardReference": null,
+        "academicSubjectDescriptor": null,
+        "courseTitle": "Section SUCCESS_GUID",
+        "description": "Standard SUCCESS_GUID-4",
+        "learningStandardId": "SUCCESS_GUID-4",
+        "itemCode": "4",
+        "namespace": "http://academicbenchmarks.com/LearningStandards.xml",
+        "successCriteria": null,
+        "uri": "https://api.academicbenchmarks.com/rest/v4/standards/SUCCESS_GUID-4",
+        "contentStandard": {
+          "mandatingEducationOrganizationReference": null,
+          "publicationStatusType": "Adopted",
+          "title": "Document SUCCESS_GUID-document",
+          "version": null,
+          "uri": null,
+          "publicationDate": null,
+          "publicationYear": 2017,
+          "beginDate": null,
+          "endDate": null,
+          "authors": [
+            {
+              "author": "Authority SUCCESS_GUID-document"
+            }
+          ]
+        },
+        "gradeLevels": [],
+        "identificationCodes": [
+          {
+            "identificationCode": "SUCCESS_GUID:00000004",
+            "contentStandardName": "AB Sequence"
+          }
+        ],
+        "prerequisiteLearningStandards": null,
+        "_etag": null
+      },
+      {
+        "id": null,
+        "parentLearningStandardReference": null,
+        "academicSubjectDescriptor": null,
+        "courseTitle": "Section SUCCESS_GUID",
+        "description": "Standard SUCCESS_GUID-5",
+        "learningStandardId": "SUCCESS_GUID-5",
+        "itemCode": "5",
+        "namespace": "http://academicbenchmarks.com/LearningStandards.xml",
+        "successCriteria": null,
+        "uri": "https://api.academicbenchmarks.com/rest/v4/standards/SUCCESS_GUID-5",
+        "contentStandard": {
+          "mandatingEducationOrganizationReference": null,
+          "publicationStatusType": "Adopted",
+          "title": "Document SUCCESS_GUID-document",
+          "version": null,
+          "uri": null,
+          "publicationDate": null,
+          "publicationYear": 2017,
+          "beginDate": null,
+          "endDate": null,
+          "authors": [
+            {
+              "author": "Authority SUCCESS_GUID-document"
+            }
+          ]
+        },
+        "gradeLevels": [],
+        "identificationCodes": [
+          {
+            "identificationCode": "SUCCESS_GUID:00000005",
+            "contentStandardName": "AB Sequence"
+          }
+        ],
+        "prerequisiteLearningStandards": null,
+        "_etag": null
+      },
+      {
+        "id": null,
+        "parentLearningStandardReference": null,
+        "academicSubjectDescriptor": null,
+        "courseTitle": "Section SUCCESS_GUID",
+        "description": "Standard SUCCESS_GUID-6",
+        "learningStandardId": "SUCCESS_GUID-6",
+        "itemCode": "6",
+        "namespace": "http://academicbenchmarks.com/LearningStandards.xml",
+        "successCriteria": null,
+        "uri": "https://api.academicbenchmarks.com/rest/v4/standards/SUCCESS_GUID-6",
+        "contentStandard": {
+          "mandatingEducationOrganizationReference": null,
+          "publicationStatusType": "Adopted",
+          "title": "Document SUCCESS_GUID-document",
+          "version": null,
+          "uri": null,
+          "publicationDate": null,
+          "publicationYear": 2017,
+          "beginDate": null,
+          "endDate": null,
+          "authors": [
+            {
+              "author": "Authority SUCCESS_GUID-document"
+            }
+          ]
+        },
+        "gradeLevels": [],
+        "identificationCodes": [
+          {
+            "identificationCode": "SUCCESS_GUID:00000006",
+            "contentStandardName": "AB Sequence"
+          }
+        ],
+        "prerequisiteLearningStandards": null,
+        "_etag": null
+      },
+      {
+        "id": null,
+        "parentLearningStandardReference": null,
+        "academicSubjectDescriptor": null,
+        "courseTitle": "Section SUCCESS_GUID",
+        "description": "Standard SUCCESS_GUID-7",
+        "learningStandardId": "SUCCESS_GUID-7",
+        "itemCode": "7",
+        "namespace": "http://academicbenchmarks.com/LearningStandards.xml",
+        "successCriteria": null,
+        "uri": "https://api.academicbenchmarks.com/rest/v4/standards/SUCCESS_GUID-7",
+        "contentStandard": {
+          "mandatingEducationOrganizationReference": null,
+          "publicationStatusType": "Adopted",
+          "title": "Document SUCCESS_GUID-document",
+          "version": null,
+          "uri": null,
+          "publicationDate": null,
+          "publicationYear": 2017,
+          "beginDate": null,
+          "endDate": null,
+          "authors": [
+            {
+              "author": "Authority SUCCESS_GUID-document"
+            }
+          ]
+        },
+        "gradeLevels": [],
+        "identificationCodes": [
+          {
+            "identificationCode": "SUCCESS_GUID:00000007",
+            "contentStandardName": "AB Sequence"
+          }
+        ],
+        "prerequisiteLearningStandards": null,
+        "_etag": null
+      },
+      {
+        "id": null,
+        "parentLearningStandardReference": null,
+        "academicSubjectDescriptor": null,
+        "courseTitle": "Section SUCCESS_GUID",
+        "description": "Standard SUCCESS_GUID-8",
+        "learningStandardId": "SUCCESS_GUID-8",
+        "itemCode": "8",
+        "namespace": "http://academicbenchmarks.com/LearningStandards.xml",
+        "successCriteria": null,
+        "uri": "https://api.academicbenchmarks.com/rest/v4/standards/SUCCESS_GUID-8",
+        "contentStandard": {
+          "mandatingEducationOrganizationReference": null,
+          "publicationStatusType": "Adopted",
+          "title": "Document SUCCESS_GUID-document",
+          "version": null,
+          "uri": null,
+          "publicationDate": null,
+          "publicationYear": 2017,
+          "beginDate": null,
+          "endDate": null,
+          "authors": [
+            {
+              "author": "Authority SUCCESS_GUID-document"
+            }
+          ]
+        },
+        "gradeLevels": [],
+        "identificationCodes": [
+          {
+            "identificationCode": "SUCCESS_GUID:00000008",
+            "contentStandardName": "AB Sequence"
+          }
+        ],
+        "prerequisiteLearningStandards": null,
+        "_etag": null
+      },
+      {
+        "id": null,
+        "parentLearningStandardReference": null,
+        "academicSubjectDescriptor": null,
+        "courseTitle": "Section SUCCESS_GUID",
+        "description": "Standard SUCCESS_GUID-9",
+        "learningStandardId": "SUCCESS_GUID-9",
+        "itemCode": "9",
+        "namespace": "http://academicbenchmarks.com/LearningStandards.xml",
+        "successCriteria": null,
+        "uri": "https://api.academicbenchmarks.com/rest/v4/standards/SUCCESS_GUID-9",
+        "contentStandard": {
+          "mandatingEducationOrganizationReference": null,
+          "publicationStatusType": "Adopted",
+          "title": "Document SUCCESS_GUID-document",
+          "version": null,
+          "uri": null,
+          "publicationDate": null,
+          "publicationYear": 2017,
+          "beginDate": null,
+          "endDate": null,
+          "authors": [
+            {
+              "author": "Authority SUCCESS_GUID-document"
+            }
+          ]
+        },
+        "gradeLevels": [],
+        "identificationCodes": [
+          {
+            "identificationCode": "SUCCESS_GUID:00000009",
+            "contentStandardName": "AB Sequence"
+          }
+        ],
+        "prerequisiteLearningStandards": null,
+        "_etag": null
+      }
+    ]
+  },
+  "One or more errors occurred. (http://localhost:64200/standards?fields[standards]=disciplines%2cdocument%2ceducation_levels%2cguid%2cnumber%2csection%2cseq%2cstatement%2cstatus%2curi&filter[standards]=(section.guid+eq+%27ERROR_GUID%27)&limit=10&sort[standards]=seq&partner.id=partner.id&auth.signature=auth.signature&auth.expires=999999999 responded with BadRequest: )"
+]

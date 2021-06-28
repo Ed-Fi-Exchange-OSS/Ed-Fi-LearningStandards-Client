@@ -1,0 +1,260 @@
+﻿[
+  {
+    "schema": "ed-fi",
+    "resource": "learningStandards",
+    "operation": "Upsert",
+    "data": [
+      {
+        "gradeLevels": [],
+        "learningStandardId": "SUCCESS_GUID-0",
+        "contentStandard": {
+          "publicationStatusDescriptor": "uri://academicbenchmarks.com/PublicationStatusDescriptor#Active",
+          "title": "Document SUCCESS_GUID-document",
+          "publicationYear": 2017,
+          "authors": [
+            {
+              "author": "Authority SUCCESS_GUID-document"
+            }
+          ]
+        },
+        "courseTitle": "Section SUCCESS_GUID",
+        "description": "Standard SUCCESS_GUID-0",
+        "identificationCodes": [
+          {
+            "contentStandardName": "AB Sequence",
+            "identificationCode": "SUCCESS_GUID:00000000"
+          }
+        ],
+        "itemCode": "0",
+        "namespace": "uri://academicbenchmarks.com/LearningStandards",
+        "uri": "https://api.academicbenchmarks.com/rest/v4/standards/SUCCESS_GUID-0"
+      },
+      {
+        "gradeLevels": [],
+        "learningStandardId": "SUCCESS_GUID-1",
+        "contentStandard": {
+          "publicationStatusDescriptor": "uri://academicbenchmarks.com/PublicationStatusDescriptor#Active",
+          "title": "Document SUCCESS_GUID-document",
+          "publicationYear": 2017,
+          "authors": [
+            {
+              "author": "Authority SUCCESS_GUID-document"
+            }
+          ]
+        },
+        "courseTitle": "Section SUCCESS_GUID",
+        "description": "Standard SUCCESS_GUID-1",
+        "identificationCodes": [
+          {
+            "contentStandardName": "AB Sequence",
+            "identificationCode": "SUCCESS_GUID:00000001"
+          }
+        ],
+        "itemCode": "1",
+        "namespace": "uri://academicbenchmarks.com/LearningStandards",
+        "uri": "https://api.academicbenchmarks.com/rest/v4/standards/SUCCESS_GUID-1"
+      },
+      {
+        "gradeLevels": [],
+        "learningStandardId": "SUCCESS_GUID-2",
+        "contentStandard": {
+          "publicationStatusDescriptor": "uri://academicbenchmarks.com/PublicationStatusDescriptor#Active",
+          "title": "Document SUCCESS_GUID-document",
+          "publicationYear": 2017,
+          "authors": [
+            {
+              "author": "Authority SUCCESS_GUID-document"
+            }
+          ]
+        },
+        "courseTitle": "Section SUCCESS_GUID",
+        "description": "Standard SUCCESS_GUID-2",
+        "identificationCodes": [
+          {
+            "contentStandardName": "AB Sequence",
+            "identificationCode": "SUCCESS_GUID:00000002"
+          }
+        ],
+        "itemCode": "2",
+        "namespace": "uri://academicbenchmarks.com/LearningStandards",
+        "uri": "https://api.academicbenchmarks.com/rest/v4/standards/SUCCESS_GUID-2"
+      },
+      {
+        "gradeLevels": [],
+        "learningStandardId": "SUCCESS_GUID-3",
+        "contentStandard": {
+          "publicationStatusDescriptor": "uri://academicbenchmarks.com/PublicationStatusDescriptor#Active",
+          "title": "Document SUCCESS_GUID-document",
+          "publicationYear": 2017,
+          "authors": [
+            {
+              "author": "Authority SUCCESS_GUID-document"
+            }
+          ]
+        },
+        "courseTitle": "Section SUCCESS_GUID",
+        "description": "Standard SUCCESS_GUID-3",
+        "identificationCodes": [
+          {
+            "contentStandardName": "AB Sequence",
+            "identificationCode": "SUCCESS_GUID:00000003"
+          }
+        ],
+        "itemCode": "3",
+        "namespace": "uri://academicbenchmarks.com/LearningStandards",
+        "uri": "https://api.academicbenchmarks.com/rest/v4/standards/SUCCESS_GUID-3"
+      },
+      {
+        "gradeLevels": [],
+        "learningStandardId": "SUCCESS_GUID-4",
+        "contentStandard": {
+          "publicationStatusDescriptor": "uri://academicbenchmarks.com/PublicationStatusDescriptor#Active",
+          "title": "Document SUCCESS_GUID-document",
+          "publicationYear": 2017,
+          "authors": [
+            {
+              "author": "Authority SUCCESS_GUID-document"
+            }
+          ]
+        },
+        "courseTitle": "Section SUCCESS_GUID",
+        "description": "Standard SUCCESS_GUID-4",
+        "identificationCodes": [
+          {
+            "contentStandardName": "AB Sequence",
+            "identificationCode": "SUCCESS_GUID:00000004"
+          }
+        ],
+        "itemCode": "4",
+        "namespace": "uri://academicbenchmarks.com/LearningStandards",
+        "uri": "https://api.academicbenchmarks.com/rest/v4/standards/SUCCESS_GUID-4"
+      },
+      {
+        "gradeLevels": [],
+        "learningStandardId": "SUCCESS_GUID-5",
+        "contentStandard": {
+          "publicationStatusDescriptor": "uri://academicbenchmarks.com/PublicationStatusDescriptor#Active",
+          "title": "Document SUCCESS_GUID-document",
+          "publicationYear": 2017,
+          "authors": [
+            {
+              "author": "Authority SUCCESS_GUID-document"
+            }
+          ]
+        },
+        "courseTitle": "Section SUCCESS_GUID",
+        "description": "Standard SUCCESS_GUID-5",
+        "identificationCodes": [
+          {
+            "contentStandardName": "AB Sequence",
+            "identificationCode": "SUCCESS_GUID:00000005"
+          }
+        ],
+        "itemCode": "5",
+        "namespace": "uri://academicbenchmarks.com/LearningStandards",
+        "uri": "https://api.academicbenchmarks.com/rest/v4/standards/SUCCESS_GUID-5"
+      },
+      {
+        "gradeLevels": [],
+        "learningStandardId": "SUCCESS_GUID-6",
+        "contentStandard": {
+          "publicationStatusDescriptor": "uri://academicbenchmarks.com/PublicationStatusDescriptor#Active",
+          "title": "Document SUCCESS_GUID-document",
+          "publicationYear": 2017,
+          "authors": [
+            {
+              "author": "Authority SUCCESS_GUID-document"
+            }
+          ]
+        },
+        "courseTitle": "Section SUCCESS_GUID",
+        "description": "Standard SUCCESS_GUID-6",
+        "identificationCodes": [
+          {
+            "contentStandardName": "AB Sequence",
+            "identificationCode": "SUCCESS_GUID:00000006"
+          }
+        ],
+        "itemCode": "6",
+        "namespace": "uri://academicbenchmarks.com/LearningStandards",
+        "uri": "https://api.academicbenchmarks.com/rest/v4/standards/SUCCESS_GUID-6"
+      },
+      {
+        "gradeLevels": [],
+        "learningStandardId": "SUCCESS_GUID-7",
+        "contentStandard": {
+          "publicationStatusDescriptor": "uri://academicbenchmarks.com/PublicationStatusDescriptor#Active",
+          "title": "Document SUCCESS_GUID-document",
+          "publicationYear": 2017,
+          "authors": [
+            {
+              "author": "Authority SUCCESS_GUID-document"
+            }
+          ]
+        },
+        "courseTitle": "Section SUCCESS_GUID",
+        "description": "Standard SUCCESS_GUID-7",
+        "identificationCodes": [
+          {
+            "contentStandardName": "AB Sequence",
+            "identificationCode": "SUCCESS_GUID:00000007"
+          }
+        ],
+        "itemCode": "7",
+        "namespace": "uri://academicbenchmarks.com/LearningStandards",
+        "uri": "https://api.academicbenchmarks.com/rest/v4/standards/SUCCESS_GUID-7"
+      },
+      {
+        "gradeLevels": [],
+        "learningStandardId": "SUCCESS_GUID-8",
+        "contentStandard": {
+          "publicationStatusDescriptor": "uri://academicbenchmarks.com/PublicationStatusDescriptor#Active",
+          "title": "Document SUCCESS_GUID-document",
+          "publicationYear": 2017,
+          "authors": [
+            {
+              "author": "Authority SUCCESS_GUID-document"
+            }
+          ]
+        },
+        "courseTitle": "Section SUCCESS_GUID",
+        "description": "Standard SUCCESS_GUID-8",
+        "identificationCodes": [
+          {
+            "contentStandardName": "AB Sequence",
+            "identificationCode": "SUCCESS_GUID:00000008"
+          }
+        ],
+        "itemCode": "8",
+        "namespace": "uri://academicbenchmarks.com/LearningStandards",
+        "uri": "https://api.academicbenchmarks.com/rest/v4/standards/SUCCESS_GUID-8"
+      },
+      {
+        "gradeLevels": [],
+        "learningStandardId": "SUCCESS_GUID-9",
+        "contentStandard": {
+          "publicationStatusDescriptor": "uri://academicbenchmarks.com/PublicationStatusDescriptor#Active",
+          "title": "Document SUCCESS_GUID-document",
+          "publicationYear": 2017,
+          "authors": [
+            {
+              "author": "Authority SUCCESS_GUID-document"
+            }
+          ]
+        },
+        "courseTitle": "Section SUCCESS_GUID",
+        "description": "Standard SUCCESS_GUID-9",
+        "identificationCodes": [
+          {
+            "contentStandardName": "AB Sequence",
+            "identificationCode": "SUCCESS_GUID:00000009"
+          }
+        ],
+        "itemCode": "9",
+        "namespace": "uri://academicbenchmarks.com/LearningStandards",
+        "uri": "https://api.academicbenchmarks.com/rest/v4/standards/SUCCESS_GUID-9"
+      }
+    ]
+  },
+  "One or more errors occurred. (http://localhost:64200/standards?fields[standards]=disciplines%2cdocument%2ceducation_levels%2cguid%2cnumber%2csection%2cseq%2cstatement%2cstatus%2curi&filter[standards]=(section.guid+eq+%27ERROR_GUID%27)&limit=10&sort[standards]=seq&partner.id=partner.id&auth.signature=auth.signature&auth.expires=999999999 responded with BadRequest: )"
+]
