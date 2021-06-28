@@ -21,8 +21,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="..\..\Scripts\AB Claim Set v2.sql" Link="Scripts\AB Claim Set v2.sql" CopyToOutputDirectory="PreserveNewest" />
-    <Content Include="..\..\Scripts\AB Claim Set v3.sql" Link="Scripts\AB Claim Set v3.sql" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="..\..\Scripts\**\*.sql" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
   <ItemGroup>
