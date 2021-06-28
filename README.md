@@ -13,8 +13,8 @@ ODS instance, and the AB Connect API.
 Latest builds of the Ed-Fi Learning Standards command-line interface (CLI), and
 Core SDK can be downloaded from the following location:
 
-[Ed-Fi Tech
-Docs](https://techdocs.ed-fi.org/display/EFLS/Ed-Fi+Learning+Standards+Sync+Utility)
+[Ed-Fi Tech Docs: Getting Started - Learning Standards Sync
+Utility](https://techdocs.ed-fi.org/display/EDFITOOLS/Getting+Started+-+Learning+Standards+Sync+Utility)
 
 ### Extract to Location
 
