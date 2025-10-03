@@ -1,0 +1,12 @@
+{
+ "servers": {
+  "ed-fi-sdk-mcp": {
+   "type": "stdio",
+   "command": "npx",
+   "args": [
+    "ed-fi-sdk-mcp"
+   ]
+  }
+ },
+ "inputs": []
+}
