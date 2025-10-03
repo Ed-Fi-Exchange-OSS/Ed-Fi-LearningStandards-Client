@@ -9,6 +9,7 @@ using EdFi.Admin.LearningStandards.Core.Models;
 using EdFi.Admin.LearningStandards.Core.Services.Interfaces;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,6 +28,7 @@ namespace EdFi.Admin.LearningStandards.Core.Services
         private readonly IAuthTokenManager _odsApiAuthTokenManager;
         private readonly ILogger<EdFiBulkJsonPersister> _logger;
         private readonly HttpClient _httpClient;
+        private readonly IEdFiDataValidator _dataValidator;
 
 
 
@@ -35,13 +37,15 @@ namespace EdFi.Admin.LearningStandards.Core.Services
             IEdFiVersionManager edFiVersionManager,
             IAuthTokenManager odsApiAuthTokenManager,
             ILogger<EdFiBulkJsonPersister> logger,
-            HttpClient httpClient)
+            HttpClient httpClient,
+            IEdFiDataValidator dataValidator)
         {
             _odsApiConfiguration = odsApiConfiguration;
             _edFiVersionManager = edFiVersionManager;
             _odsApiAuthTokenManager = odsApiAuthTokenManager;
             _logger = logger;
             _httpClient = httpClient;
+            _dataValidator = dataValidator;
         }
 
         public async Task<EdFiVersionModel> GetEdFiVersion()
@@ -60,6 +64,24 @@ namespace EdFi.Admin.LearningStandards.Core.Services
 
             Check.NotEmpty(edFiBulkJson.Resource, nameof(edFiBulkJson.Resource));
             Check.NotNull(edFiBulkJson.Data, nameof(edFiBulkJson.Data));
+
+            // Pre-validate all data before submission
+            _logger.LogDebug("Starting pre-validation for {Resource} with {Count} items",
+                edFiBulkJson.Resource, edFiBulkJson.Data.Count);
+
+            var edFiVersion = await _edFiVersionManager.GetEdFiVersion(_odsApiConfiguration);
+            var validationResult = await _dataValidator.ValidateBulkJsonModelAsync(edFiBulkJson, edFiVersion);
+
+            if (!validationResult.IsSuccess)
+            {
+                _logger.LogError("Pre-validation failed for {Resource}: {ValidationErrors}",
+                    edFiBulkJson.Resource, validationResult.ErrorMessage);
+
+                // Return validation error as response
+                return new List<IResponse> { validationResult };
+            }
+
+            _logger.LogDebug("Pre-validation successful for {Resource}", edFiBulkJson.Resource);
 
             //var odsResourceUrl = EdFiBulkJsonPersisterHelper.ResolveOdsApiResourceUrl(
             //    _odsApiConfiguration.Url,
@@ -118,19 +140,23 @@ namespace EdFi.Admin.LearningStandards.Core.Services
                     null,
                     httpResponseMessage.StatusCode);
 
+            string responseContent = httpResponseMessage.Content != null
+                ? await httpResponseMessage.Content.ReadAsStringAsync().ConfigureAwait(false)
+                : null;
+
+            // Try to parse Ed-Fi API error response for detailed validation errors
+            string detailedErrorMessage = ExtractEdFiValidationErrors(responseContent);
+
             var errorResponse = new ResponseModel(
                 httpResponseMessage.IsSuccessStatusCode,
-                httpResponseMessage.ReasonPhrase,
-                httpResponseMessage.Content != null
-                    ? await httpResponseMessage.Content.ReadAsStringAsync()
-                                               .ConfigureAwait(false)
-                    : null,
+                detailedErrorMessage ?? httpResponseMessage.ReasonPhrase,
+                responseContent,
                 httpResponseMessage.StatusCode);
 
             var logMessageBuilder = new StringBuilder();
             logMessageBuilder.AppendLine("While sending the following content to the ODS API:");
             logMessageBuilder.AppendLine(requestContent);
-            logMessageBuilder.AppendLine("The following error occured:");
+            logMessageBuilder.AppendLine("The following error occurred:");
             logMessageBuilder.AppendLine($"HttpStatusCode: {errorResponse.StatusCode}");
             logMessageBuilder.AppendLine($"Message: {errorResponse.ErrorMessage}");
             logMessageBuilder.AppendLine($"Response: {errorResponse.Content}");
@@ -138,6 +164,64 @@ namespace EdFi.Admin.LearningStandards.Core.Services
             _logger.LogError(logMessageBuilder.ToString());
 
             return errorResponse;
+        }
+
+        /// <summary>
+        /// Extracts detailed validation error information from Ed-Fi API error responses
+        /// </summary>
+        private string ExtractEdFiValidationErrors(string responseContent)
+        {
+            if (string.IsNullOrEmpty(responseContent))
+                return null;
+
+            try
+            {
+                var errorResponse = JObject.Parse(responseContent);
+
+                // Ed-Fi API v4.0 error structure
+                var validationErrors = errorResponse["validationErrors"];
+                if (validationErrors != null)
+                {
+                    var errorMessages = new List<string>();
+
+                    foreach (var property in validationErrors.Children<JProperty>())
+                    {
+                        var fieldName = property.Name.Replace("$.", "");
+                        var errors = property.Value.ToObject<string[]>();
+
+                        if (errors != null && errors.Length > 0)
+                        {
+                            errorMessages.Add($"Field '{fieldName}': {string.Join(", ", errors)}");
+                        }
+                    }
+
+                    if (errorMessages.Any())
+                    {
+                        return $"Ed-Fi API Validation Errors: {string.Join("; ", errorMessages)}";
+                    }
+                }
+
+                // Check for general error details
+                var detail = errorResponse["detail"]?.ToString();
+                var title = errorResponse["title"]?.ToString();
+                var correlationId = errorResponse["correlationId"]?.ToString();
+
+                if (!string.IsNullOrEmpty(detail) || !string.IsNullOrEmpty(title))
+                {
+                    var message = $"{title}: {detail}";
+                    if (!string.IsNullOrEmpty(correlationId))
+                    {
+                        message += $" (CorrelationId: {correlationId})";
+                    }
+                    return message;
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning(ex, "Failed to parse Ed-Fi API error response: {ResponseContent}", responseContent);
+            }
+
+            return null;
         }
     }
 }

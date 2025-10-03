@@ -21,12 +21,18 @@ namespace EdFi.Admin.LearningStandards.Core.Services
         private readonly IEdFiVersionManager _edFiVersionManager;
         private readonly IHttpClientFactory _httpClientFactory;
         private readonly ILogger<EdFiBulkJsonPersister> _logger;
+        private readonly IEdFiDataValidator _dataValidator;
 
-        public EdFiBulkJsonPersisterFactory(IEdFiVersionManager versionManager, IHttpClientFactory httpClientFactory, ILogger<EdFiBulkJsonPersister> logger)
+        public EdFiBulkJsonPersisterFactory(
+            IEdFiVersionManager versionManager,
+            IHttpClientFactory httpClientFactory,
+            ILogger<EdFiBulkJsonPersister> logger,
+            IEdFiDataValidator dataValidator)
         {
             _edFiVersionManager = versionManager;
             _httpClientFactory = httpClientFactory;
             _logger = logger;
+            _dataValidator = dataValidator;
         }
 
         public IEdFiBulkJsonPersister CreateEdFiBulkJsonPersister(IAuthTokenManager authTokenManager, IEdFiOdsApiConfiguration odsApiConfiguration)
@@ -36,7 +42,8 @@ namespace EdFi.Admin.LearningStandards.Core.Services
                 _edFiVersionManager,
                 authTokenManager,
                 _logger,
-                _httpClientFactory.CreateClient(nameof(IEdFiBulkJsonPersister)));
+                _httpClientFactory.CreateClient(nameof(IEdFiBulkJsonPersister)),
+                _dataValidator);
         }
     }
 }
